@@ -5,7 +5,7 @@ const About = () => {
   return (
   <section
         id="about"
-        className="py-24 pb-24 px-[15vw] md:px-[7vw]  "
+        className="py-2 pb-24 px-[15vw] md:px-[7vw]  "
       >
         {/* Section Title */}
         <div className="text-center mb-16">
