@@ -166,7 +166,7 @@ export const SkillsInfo = [
       },
       {
         name: "Tailwind CSS",
-        imgPath: "/skills/tailwind.png",
+        imgPath: "/skills/tailwindcss.png",
       },
       {
         name: "Redux",
@@ -317,7 +317,7 @@ export const projects = [
     image: "project/cabify.jpg",
     tags: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "Google Maps API (via GCP)"],
     github: "https://github.com/techie-mohit/Cabify",
-    webapp: "https://cabify-app-example.com/",
+    webapp: "",
   },
   {
     id: 3,
@@ -327,7 +327,7 @@ export const projects = [
     image: "project/bytelog.png",
     tags: ["Next.js", "React.js", "TypeScript", "Neon (PostgreSQL)", "Prisma ORM", "Clerk Authentication", "Tailwind CSS"],
     github: "https://github.com/techie-mohit/ByteLog",
-    webapp: "https://bytelog.com/", // Updated webapp link
+    webapp: "", // Updated webapp link
   },
   {
     id: 4,
@@ -337,7 +337,7 @@ export const projects = [
     image: "project/employee.png",
     tags: ["React.js", "JavaScript", "localStorage", " CSS"],
     github: "https://github.com/techie-mohit/Employee-Management-System",
-    webapp: "https://employee-management-system-xyz.netlify.app/",
+    webapp: "",
   },
 ];  
 
