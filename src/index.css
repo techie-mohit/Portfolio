@@ -329,6 +329,8 @@ section {
   animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
+
+
 @keyframes wordSlider {
   0% {
     transform: translateY(0.5%);
