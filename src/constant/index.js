@@ -327,7 +327,7 @@ export const projects = [
     image: "project/bytelog.png",
     tags: ["Next.js", "React.js", "TypeScript", "Neon (PostgreSQL)", "Prisma ORM", "Clerk Authentication", "Tailwind CSS"],
     github: "https://github.com/techie-mohit/ByteLog",
-    webapp: "", // Updated webapp link
+    webapp: "https://byte-log-6bz4.vercel.app",
   },
   {
     id: 4,
