@@ -20,16 +20,16 @@ const Hero = () => {
         <img src="/images/bg.png" alt="backgrund" />
       </div>
 
-      <div className="hero-layout">
+      <div className="flex flex-col sm:flex-row items-center justify-between relative z-20 gap-4 mt-20">
         {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5 xl:mb-10">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h2>Hi, I am </h2>
               <h1>Mohit Keshari</h1>
 
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ee] leading-tight">
-                <span className="text-white">I am a&nbsp;&nbsp;</span>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 mt-5 text-[#8245ee] leading-tight">
+                <span className="text-white lg:text-5xl ">I am a&nbsp;&nbsp;</span>
 
                 <span className="Typewriter-text md:text-5xl ">
                   <Typewriter
@@ -48,40 +48,16 @@ const Hero = () => {
                   />
                 </span>
               </h3>
-
-              {/* Resume Link */}
-
-              {/* <h1>
-              I  am a 
-              <span className="slide">
-                <span className="wrapper">
-                  {words.map((word, index) => (
-                    <span
-                      key={index}
-                      className="flex items-center md:gap-3 gap-1 pb-2"
-                    >
-                      <span className='text-[#8245ec] sm:text-md'>{word.text}</span>
-                    </span>
-                  ))}
-                </span>
-              </span>
-            </h1> */}
             </div>
-
-            {/* <Button
-            text="See My Work"
-            className="md:w-80 md:h-16 w-60 h-12"
-            id="counter"
-          /> */}
           </div>
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure>
-          <div className="hero-3d-layout">
+        <div>
+          <div className="xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] sm:w-[300px] sm:h-[300px] w-[250px] h-[200px] md:mt-20 xl:mb-50">
             <HeroExperience />
           </div>
-        </figure>
+        </div>
       </div>
 
       {/* <AnimatedCounter /> */}
