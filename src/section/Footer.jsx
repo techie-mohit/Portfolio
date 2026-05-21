@@ -16,13 +16,13 @@ const Footer = () => {
               href={socialImg.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-2xl bg-white/90 border border-white/10 flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-white hover:scale-105 shadow-md p-2 group"
+              className="w-11 h-11 rounded-2xl bg-white/[0.03] border border-white/5 flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-white/[0.08] hover:border-purple-500/20 hover:scale-105 shadow-2xl p-2.5 group"
               aria-label="Social Link"
             >
               <img
                 src={socialImg.imgPath}
                 alt="social icon"
-                className="w-5 h-5 object-contain group-hover:scale-110 transition-transform duration-300"
+                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </a>
           ))}

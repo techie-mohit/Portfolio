@@ -47,11 +47,18 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        {/* Contact Button */}
-        <div className="hidden lg:flex">
+        {/* Contact & Resume Buttons */}
+        <div className="hidden lg:flex items-center gap-4">
+          <a
+            href="/Mohit_Keshari_Resume.pdf"
+            download="Mohit_Keshari_Resume.pdf"
+            className="relative group overflow-hidden bg-white/[0.03] border border-white/10 hover:bg-white/[0.08] hover:border-white/20 text-white font-extrabold text-xs uppercase px-4 py-2.5 rounded-2xl transition-all duration-300 hover:scale-105"
+          >
+            Resume
+          </a>
           <a
             href="#contact"
-            className="relative group overflow-hidden bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-extrabold text-sm uppercase px-6 py-2.5 rounded-2xl shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105"
+            className="relative group overflow-hidden bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-extrabold text-xs uppercase px-4 py-2.5 rounded-2xl shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105"
           >
             Contact me
           </a>
@@ -100,7 +107,15 @@ const NavBar = () => {
                 </a>
               </li>
             ))}
-            <li>
+            <li className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/Mohit_Keshari_Resume.pdf"
+                download="Mohit_Keshari_Resume.pdf"
+                onClick={() => setIsOpen(false)}
+                className="inline-block bg-white/[0.05] border border-white/10 text-white font-extrabold text-base uppercase px-8 py-3.5 rounded-2xl shadow-xl transition-all duration-300"
+              >
+                Download Resume
+              </a>
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}

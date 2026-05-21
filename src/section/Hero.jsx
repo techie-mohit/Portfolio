@@ -61,9 +61,40 @@ const Hero = () => {
               </h3>
             </div>
             
-            <p className="text-gray-400 text-base sm:text-lg max-w-xl leading-relaxed mt-2 font-medium">
+            <p className="text-gray-400 text-base sm:text-lg max-w-xl leading-relaxed mt-2 font-medium select-text">
               I architect highly scalable, robust MERN stack applications and low-latency system solutions with solid expertise in modern backend services.
             </p>
+
+            {/* Glowing CTA Action Buttons */}
+            <div className="flex flex-wrap items-center gap-4 mt-6">
+              <a
+                href="/Mohit_Keshari_Resume.pdf"
+                download="Mohit_Keshari_Resume.pdf"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-extrabold text-sm uppercase px-8 py-4 rounded-2xl shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2.5}
+                  stroke="currentColor"
+                  className="w-4 h-4 animate-bounce"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+                Download Resume
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/10 hover:bg-white/[0.08] hover:border-white/20 text-white font-extrabold text-sm uppercase px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+              >
+                Get In Touch
+              </a>
+            </div>
           </div>
         </header>
 
