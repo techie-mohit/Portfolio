@@ -50,13 +50,15 @@ const TechStack = () => {
                   {category.skills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="flex items-center space-x-2.5 bg-white/[0.02] border border-white/5 rounded-2xl py-3 px-3.5 text-left hover:bg-white/[0.06] hover:border-purple-500/30 transition-all duration-300 group"
+                      className="flex items-center space-x-3 bg-white/[0.02] border border-white/5 rounded-2xl py-2 px-3 text-left hover:bg-white/[0.06] hover:border-purple-500/30 transition-all duration-300 group"
                     >
-                      <img
-                        src={skill.imgPath}
-                        alt={`${skill.name} logo`}
-                        className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
-                      />
+                      <div className="w-8 h-8 rounded-xl bg-white/95 flex items-center justify-center p-1.5 shrink-0 shadow-[0_2px_10px_rgba(255,255,255,0.08)] group-hover:bg-white group-hover:scale-105 transition-all duration-300">
+                        <img
+                          src={skill.imgPath}
+                          alt={`${skill.name} logo`}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
                       <span className="text-xs sm:text-sm font-semibold text-gray-300 group-hover:text-white transition-colors duration-300">
                         {skill.name}
                       </span>
