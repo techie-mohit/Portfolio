@@ -3,35 +3,38 @@ const navLinks = [
     name: "About",
     link: "#about",
   },
-  
   {
     name: "Skills",
     link: "#skills",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
   },
   {
     name: "Projects",
     link: "#work",
   },
   {
-    name:"Education",
+    name: "Education",
     link: "#education",
-  }
+  },
 ];
-  
+
 const words = [
-  { text: "Coder"},
-  { text: "Full Stack Developer"},
-  { text: "Backend Developer"},
-  { text: "Coder"},
-  { text: "Full Stack Developer"},
-  { text: "Backend Developer"},
+  { text: "Software Engineer" },
+  { text: "Full Stack Developer" },
+  { text: "Backend Developer" },
+  { text: "Software Engineer" },
+  { text: "Full Stack Developer" },
+  { text: "Backend Developer" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 400, suffix: "+", label: "DSA Problems Solved" },
+  { value: 3, suffix: "+", label: "Professional Projects" },
+  { value: 2, suffix: "", label: "Internships Completed" },
+  { value: 8.2, suffix: "", label: "CGPA" },
 ];
 
 const logoIconsList = [
@@ -87,8 +90,6 @@ const abilities = [
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
-
-
 
 
 
@@ -149,11 +150,11 @@ export const SkillsInfo = [
         imgPath: "/skills/nextjs.png",
       },
       {
-        name: "HTML",
+        name: "HTML5",
         imgPath: "/skills/html.png",
       },
       {
-        name: "CSS",
+        name: "CSS3",
         imgPath: "/skills/css.png",
       },
       {
@@ -173,8 +174,8 @@ export const SkillsInfo = [
         imgPath: "/skills/redux.png",
       },
       {
-        name: "Material UI",
-        imgPath: "/skills/materialui.png",
+        name: "ShadCN UI",
+        imgPath: "/skills/shadcnui.svg",
       },
     ]
   },
@@ -186,7 +187,7 @@ export const SkillsInfo = [
         imgPath: "/skills/nodejs.png",
       },
       {
-        name: "Express",
+        name: "Express.js",
         imgPath: "/skills/express.png",
       },
       {
@@ -197,19 +198,19 @@ export const SkillsInfo = [
         name: "MySQL",
         imgPath: "/skills/mysql.png",
       },
+      {
+        name: "Redis",
+        imgPath: "/skills/redis.svg",
+      },
+      {
+        name: "GraphQL",
+        imgPath: "/skills/graphql.svg",
+      },
     ]  
   },
   {
     title: 'Languages',
     skills: [
-      {
-        name: "Python",
-        imgPath: "/skills/python.png",
-      },
-      {
-        name: "Java",
-        imgPath: "/skills/java.png",
-      },
       {
         name: "C++",
         imgPath: "/skills/cpp.png",
@@ -223,14 +224,47 @@ export const SkillsInfo = [
         imgPath: "/skills/typescript.png",
       },
       {
-        name: "C",
-        imgPath: "/skills/c.png",
-      }
+        name: "Python",
+        imgPath: "/skills/python.png",
+      },
     ]
   },
   {
-    title: "Tools",
+    title: "Real-Time & Auth",
     skills: [
+      {
+        name: "Socket.IO",
+        imgPath: "/skills/socketio.svg",
+      },
+      {
+        name: "WebRTC",
+        imgPath: "/skills/webrtc.svg",
+      },
+      {
+        name: "WebSockets",
+        imgPath: "/skills/websocket.svg",
+      },
+      {
+        name: "JWT",
+        imgPath: "/skills/jwt.svg",
+      },
+      {
+        name: "OAuth 2.0",
+        imgPath: "/skills/oauth.svg",
+      },
+    ]
+  },
+  {
+    title: "DevOps & Tools",
+    skills: [
+      {
+        name: "Docker",
+        imgPath: "/skills/docker.svg",
+      },
+      {
+        name: "AWS",
+        imgPath: "/skills/aws.svg",
+      },
       {
         name: "Git",
         imgPath: "/skills/git.png",
@@ -240,17 +274,25 @@ export const SkillsInfo = [
         imgPath: "/skills/github.png",
       },
       {
-        name: "Postman",
-        imgPath: "/skills/postman.png",
-      },
-      {
         name: "Vercel",
         imgPath: "/skills/vercel.png",
       },
       {
-        name : "Vs Code",
-        imgPath: "/skills/vscode.png",
-      }
+        name: "Render",
+        imgPath: "/skills/render.svg",
+      },
+      {
+        name: "Postman",
+        imgPath: "/skills/postman.png",
+      },
+      {
+        name: "RabbitMQ",
+        imgPath: "/skills/rabbitmq.svg",
+      },
+      {
+        name: "GitHub Actions",
+        imgPath: "/skills/githubactions.svg",
+      },
     ]
   }
 
@@ -260,10 +302,10 @@ export const education = [
   {
     id: 0,
     img: "education/college.jpeg",
-    school: "Ajay Kumar Garg Engineering College Ghaziabad",
-    date: "Nov 2022 - Present",
-    grade: "79.1%",
-    desc: "I am pursuing my Bachelor's degree in Computer Science and Engineering  (BTech) from Ajay Kumar Garg Engineering College Ghaziabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems.",
+    school: "Ajay Kumar Garg Engineering College, Ghaziabad",
+    date: "2022 – 2026",
+    grade: "CGPA: 8.2/10",
+    desc: "I am pursuing my Bachelor's degree in Computer Science and Engineering (BTech) from Ajay Kumar Garg Engineering College, Ghaziabad. Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Computer Networks, Operating Systems, Object-Oriented Programming.",
     degree: "Bachelor of Technology - BTech (Computer Science and Engineering)",
   },
   {
@@ -287,62 +329,54 @@ export const education = [
 ];
 
 
+export const experiences = [
+  {
+    id: 0,
+    role: "Associate Software Engineer Intern",
+    company: "Primathon",
+    date: "Jan 2026 - Mar 2026",
+    desc: "Designed and implemented scalable backend services using TypeScript, Node.js, and Express.js, integrating Redis caching to reduce database query latency by 35%. Designed and optimized MongoDB schemas using Mongoose for service listings and user profiles, ensuring efficient data modeling and query performance. Collaborated closely with the backend team to design and integrate scalable RESTful APIs.",
+    skills: ["TypeScript", "Node.js", "Express.js", "Redis", "MongoDB", "Mongoose", "RESTful APIs"],
+  },
+  {
+    id: 1,
+    role: "Full Stack Web Development Intern",
+    company: "Unified Mentor",
+    date: "Jul 2025 - Aug 2025",
+    desc: "Delivered responsive front-end interfaces using React.js and Tailwind CSS, and implemented scalable, production-ready features. Optimized state management using Zustand, reducing API response latency by 30% and overall platform load time by 15%. Collaborated with an Agile team using Git for version control to design, integrate, and optimize APIs.",
+    skills: ["React.js", "Tailwind CSS", "Zustand", "Git", "Agile", "API Integration"],
+  },
+];
 
 export const projects = [
   {
     id: 0,
-    title: "Linkup - Social Networking App",
+    title: "Bookzy – Online Book Marketplace",
     description:
-      "LinkUp is a sleek social networking platform focused on meaningful one-to-one connections. It enables users to create profiles, discover others, and engage in private real-time conversations. Designed with a clean and responsive interface, LinkUp prioritizes simplicity and performance, making it easy to stay connected without the noise of group chats or feeds.",
-    image: "project/linkup.png",
-    tags: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
-    github: "https://github.com/techie-mohit/Linkup",
-    webapp: "https://linkup-u40u.onrender.com/",
+      "Architected a full-stack MERN marketplace using TypeScript, implementing JWT (httpOnly cookie) authentication and Google OAuth 2.0. Integrated Razorpay payment gateway with HMAC-SHA256 signature verification to ensure secure transaction processing. Designed modular 10+ RESTful APIs with Express.js and MongoDB and implemented aggregation pipelines for revenue analytics and order insights. Improved application performance by implementing Redux Toolkit with RTK Query reducing redundant API calls.",
+    image: "project/Bookzy.png",
+    tags: ["TypeScript", "React.js", "Node.js", "Express.js", "MongoDB", "Razorpay", "Redux Toolkit", "Google OAuth 2.0"],
+    github: "https://github.com/techie-mohit/Bookzy-Backend",
+    webapp: "https://bookzy-frontend.vercel.app",
   },
   {
     id: 1,
-    title: "Learnify",
+    title: "Voxinity – Real-Time Communication Platform",
     description:
-      "Learnify is a modern e-learning platform designed to make high-quality education accessible to everyone. Inspired by Udemy, it allows instructors to create and manage courses, while students can browse, enroll, and learn at their own pace. The platform features video-based lessons, progress tracking, and secure payments, delivering a smooth and engaging online learning experience.",
-    image: "project/lms.png",
-    tags: ["React.js", "Node.js", "Express", "MongoDB", "Stripe", "Cloudinary", "Tailwind CSS"],
-    github: "https://github.com/techie-mohit/Learnify",
-    webapp: "https://learnify-uy89.onrender.com",
+      "Engineered a real-time chat, audio, and video communication platform using MERN, WebRTC, and Socket.IO for low-latency bidirectional messaging. Implemented custom signaling server with ICE candidate exchange and STUN/TURN-based NAT traversal. Optimized message retrieval using MongoDB indexes, reducing query latency and loading performance by 80%.",
+    image: "project/communication.png",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "WebRTC", "Socket.IO"],
+    github: "https://github.com/techie-mohit/Voxinity",
+    webapp: "https://video-calling-feiz.vercel.app",
   },
   {
     id: 2,
-    title: "Cabify",
+    title: "Learnify – Learning Management System",
     description:
-      "Cabify is a ride-hailing application that allows users to book cabs with ease and convenience. Users can sign up, choose their pickup and drop-off locations, and get matched with nearby drivers. The app uses Google Maps via Google Cloud Platform (GCP) for accurate location services, route display, and real-time tracking. It’s designed to provide a smooth and intuitive experience for both riders and drivers.",
-    image: "project/cabify.jpg",
-    tags: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "Google Maps API (via GCP)"],
-    github: "https://github.com/techie-mohit/Cabify",
-    webapp: "",
-  },
-  {
-    id: 3,
-    title: "ByteLog",
-    description:
-      "ByteLog is a sleek and modern blogging platform built specifically for developers to write and share technical content. It supports clean code formatting, user-friendly writing tools, and easy post management. With a focus on performance, security, and simplicity, ByteLog offers a smooth experience for both readers and writers.",
-    image: "project/bytelog.png",
-    tags: ["Next.js", "React.js", "TypeScript", "Neon (PostgreSQL)", "Prisma ORM", "Clerk Authentication", "Tailwind CSS"],
-    github: "https://github.com/techie-mohit/ByteLog",
-    webapp: "https://byte-log-6bz4.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Employee Management System",
-    description:
-      "This is a basic employee management system that allows users to add, edit, view, and delete employee records. Built using React.js, the app uses the browser's localStorage to save data, making it lightweight and easy to use without any backend. It’s a great tool for practicing CRUD operations and state management in React.",
-    image: "project/employee.png",
-    tags: ["React.js", "JavaScript", "localStorage", " CSS"],
-    github: "https://github.com/techie-mohit/Employee-Management-System",
-    webapp: "",
+      "Developed a scalable LMS with 15+ RESTful APIs for course, enrollment, and user lifecycle management. Implemented role-based access control with JWT authentication supporting multi-role (Instructor, Student). Integrated Stripe payment gateway with secure checkout flow and server-side transaction validation. Enhanced backend efficiency by optimizing database queries and improving API response consistency by 40%.",
+    image: "project/lms.png",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe", "JWT", "Cloudinary", "Tailwind CSS"],
+    github: "https://github.com/techie-mohit/Learnify",
+    webapp: "https://learnify-uy89.onrender.com",
   },
 ];  
-
-
-
-
-
-

@@ -15,7 +15,7 @@ const About = () => {
         <div className="border border-white bg-gray-900 backdrop-blur-md  p-8 rounded-xl">
             <p className="mt-4 text-gray-400 font-bold"> I am a full-stack developer with a passion for creating dynamic and responsive web applications.
             Skilled in both front-end and back-end development, I specialize in the MERN stack and other
-            modern technologies . I am a passionate software engineer with a strong foundation in computer science and a keen interest in web development.</p>
+            modern technologies . I am a passionate software engineer with a strong foundation in computer science and a great interest in web development.</p>
         </div>
 
         

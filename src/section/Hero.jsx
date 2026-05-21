@@ -34,10 +34,10 @@ const Hero = () => {
                 <span className="Typewriter-text md:text-5xl ">
                   <Typewriter
                     words={[
+                      "Software Engineer",
                       "Full Stack Developer",
                       "MERN Stack Developer",
                       "Backend Developer",
-                      "Coder",
                     ]}
                     loop={0}
                     cursor

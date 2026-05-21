@@ -4,6 +4,7 @@ import WorkSection from './section/WorkSection'
 import Navbar from './components/Navbar'
 import FeaturedCards from './section/FeaturedCards'
 import TechStack from './section/TechStack'
+import Experience from './section/Experience'
 import Education from './section/Education'
 import Contact from './section/Contact'
 import Footer from './section/Footer'
@@ -16,6 +17,7 @@ const App = () => {
    <Hero />
    <About/>
    <TechStack />
+   <Experience />
    <WorkSection/>
    <Education />
    <FeaturedCards/>
