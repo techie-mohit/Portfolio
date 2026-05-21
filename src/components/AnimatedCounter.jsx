@@ -39,18 +39,21 @@ const AnimatedCounter = () => {
   }, []);
 
   return (
-    <div id="counter" ref={counterRef} className="padding-x-lg xl:mt-0 mt-32">
-      <div className="mx-auto grid-4-cols">
+    <div id="counter" ref={counterRef} className="max-w-7xl mx-auto px-6 mt-16 sm:mt-24 relative z-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {counterItems.map((item, index) => (
           <div
             key={index}
             ref={(el) => el && (countersRef.current[index] = el)}
-            className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
+            className="group/counter bg-gradient-to-b from-gray-900/60 to-black/80 backdrop-blur-2xl rounded-3xl p-6 sm:p-8 border border-white/5 shadow-2xl hover:border-purple-500/20 hover:shadow-purple-500/5 transition-all duration-500 flex flex-col justify-center text-center relative overflow-hidden"
           >
-            <div className="counter-number text-white-50 text-5xl font-bold mb-2">
+            {/* Ambient card hover glow */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 to-indigo-500/5 opacity-0 group-hover/counter:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            
+            <div className="counter-number text-4xl sm:text-5xl font-extrabold mb-2.5 bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(139,92,246,0.15)]">
               0 {item.suffix}
             </div>
-            <div className="text-white-50 text-lg">{item.label}</div>
+            <div className="text-gray-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">{item.label}</div>
           </div>
         ))}
       </div>
